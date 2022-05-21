@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Fira;
+  src: url('../../../src/FiraCode/static/FiraCode-Regular.ttf');
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Fira;
+  overflow-x: hidden;
+}
+
