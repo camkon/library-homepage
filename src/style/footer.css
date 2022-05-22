@@ -1,7 +1,11 @@
 #footer-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 15rem;
+  justify-content: space-between;
+  height: 5rem;
   width: 100%;
+  padding: 0 4rem;
+  font-size: 1rem;
+  background-color: #303030;
+  color: #fff;
 }

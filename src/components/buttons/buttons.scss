@@ -1,7 +1,55 @@
 #buttons-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 15rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+    height: auto;
+    min-height: 65vh;
     width: 100%;
+    padding: 3rem 4rem 5rem 4rem;
+
+    .buttons-boxes {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        min-height: 13rem;
+        flex: auto;
+        height: auto;
+        width: 20rem;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        cursor: pointer;
+
+        .buttons-box-preview {
+            height: 10rem;
+            width: 100%;
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+        
+        .buttons-box-text {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            padding: 1rem;
+            background-color: #ccc;
+            color: #202020;
+            border-radius: 0 0 0.5rem 0.5rem;
+            
+            .buttons-box-text-title {
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+
+            .buttons-box-text-subtitle {
+                font-size: 0.95rem;
+                cursor: default;
+            }
+        }
+    }
 }

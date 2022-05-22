@@ -4,7 +4,8 @@ import '../../style/header.css'
 const Header = () => {
   return(
     <div id="header-container">
-      HEADER
+      <div id="header-title">Component Index</div>
+      <div id="header-subtitle">Select any component to view documentation and examples</div>
     </div>
   )
 }

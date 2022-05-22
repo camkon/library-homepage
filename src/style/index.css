@@ -5,8 +5,23 @@
 
 body {
   margin: 0;
-  box-sizing: border-box;
   font-family: Fira;
+  font-size: 1.2rem;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
 }
 
