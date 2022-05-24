@@ -16,7 +16,7 @@
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
-        min-height: 13rem;
+        min-height: 10rem;
         flex: auto;
         height: auto;
         width: 20rem;
@@ -25,6 +25,9 @@
         cursor: pointer;
 
         .buttons-box-preview {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             height: 10rem;
             width: 100%;
             border-radius: 0.5rem 0.5rem 0 0;
@@ -44,6 +47,12 @@
             .buttons-box-text-title {
                 font-size: 1.1rem;
                 font-weight: 600;
+            }
+
+            @media screen and (max-width: 1024px) {
+                .buttons-box-text-title {
+                    font-size: 0.95rem;
+                }
             }
 
             .buttons-box-text-subtitle {
