@@ -1,0 +1,93 @@
+#navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: sticky;
+    top: 2.7rem;
+    height: 5.5rem;
+    width: 100%;
+    background-color: #fff;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0.75rem; left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: #ddd;
+    }
+
+    #nav-left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 1rem;
+        height: 90%;
+        width: 60%;
+
+        .left-menus {
+            padding: 0 0.25rem;
+            position: relative;
+            color: #808080;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -1rem; left: 0;
+                height: 1px;
+                width: 100%;
+                transition: all 0.2s ease-in-out;
+            }
+            
+            &:hover {
+                cursor: pointer;
+                &::after {
+                    background-color: #303030;
+                }
+            }
+        }
+
+        .menu-active {
+            color: #000;
+            &::after {
+                background-color: #303030 !important;
+            }
+        }
+    }
+
+    #nav-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 1rem;
+        height: 90%;
+        width: fit-content;
+
+        .right-menus {
+            background-color: #ddd;
+            border-radius: 0.25rem;
+            cursor: pointer;
+
+            &:first-child {
+                padding: 0.5rem 0.25rem 0.5rem 1rem;
+
+                &:hover {
+                    background-color: #eee;
+                }
+            }
+            
+            &:last-child {
+                padding: 0.5rem 0.75rem 0.5rem 0.25rem;
+                background-color: #2576e6;
+                color: #fff;
+
+                &:hover {
+                    background-color: #1564d2;
+                }
+            }
+
+            .faIcon:first-child {margin-left: 0.5rem;}
+            .faIcon:last-child {margin-right: 0.5rem;}
+        }
+    }
+}

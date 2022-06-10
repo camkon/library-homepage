@@ -1,17 +1,14 @@
-import react from 'react'
-import './style/app.css'
-
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
-import Buttons from './components/buttons/buttons';
+import { Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout';
+import Home from './components/Home';
 
 const App = () => {
   return(
-    <div id="app-container">
-      <Header />
-      <Buttons />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route exact path='/' element={<Home />}/>
+      </Route>
+    </Routes>
   )
 }
 

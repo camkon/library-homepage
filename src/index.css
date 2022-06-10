@@ -1,0 +1,27 @@
+@font-face {
+    font-family: ibm;
+    src: url('./assets/ibm-plex/IBMPlexSans-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --g1: #202020;
+}
+
+body {
+    margin: 0;
+    font-family: ibm;
+}
+
+input {
+    font-family: ibm;
+}
+
+::placeholder {
+    font-family: ibm;
+    font-weight: 600;
+    color: #505050;
+}
