@@ -1,0 +1,103 @@
+$g1: var(--g1);
+$g11: var(--g11);
+$g2: var(--g2);
+$g22: var(--g22);
+
+
+#form {
+    width: 23rem;
+    padding: 1rem;
+
+    .form-item {
+        margin: 1rem 0;
+
+        .ant-input-status-error {
+            border-color: #202020;
+        }
+
+        input {
+            border-radius: 0.25rem;
+            padding: 0.6rem 1rem;
+
+            &::placeholder {
+                font-weight: 100;
+            }
+        }
+
+        .ant-input {
+            border-color: $g1;
+
+            &:focus {
+                box-shadow: 0px 0px 0 1px #ddd;
+            }
+        }
+    }
+
+
+
+    .login-form-button {
+        height: auto;
+        width: 100%;
+        background-color: $g1;
+        border-color: $g1;
+        border-radius: 0.25rem;
+        padding: 0.6rem 0;
+    }
+
+
+
+    //checkbox
+    .ant-checkbox-checked {
+        span {
+            border-color: $g1;
+            background-color: $g1;
+        }
+
+        &::after {
+            border-color: $g1;
+        }
+    }
+
+    .ant-checkbox {
+        .ant-checkbox-inner {
+            border-color: $g1;
+        }
+    }
+
+
+
+
+    .login-form-forgot {
+        position: absolute;
+        right: 0;
+        color: $g1;
+        font-size: 14px;
+    }
+
+    .ant-form-item-explain-error {
+        color: #808080;
+    }
+
+    .ant-form-item-control-input-content {
+        
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    #form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #form {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #form {
+        width: 90%;
+    }
+}

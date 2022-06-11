@@ -1,0 +1,150 @@
+$g1: var(--g1);
+$g11: var(--g11);
+$g2: var(--g2);
+$g22: var(--g22);
+
+@font-face {
+    font-family: Logo;
+    src: url('../../assets/ibm-plex/IBMPlexSans-Bold.ttf');
+}
+@font-face {
+    font-family: LogoSemi;
+    src: url('../../assets/ibm-plex/IBMPlexSans-SemiBold.ttf');
+}
+
+
+#login-page-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 4rem;
+    background-color: #fefefe;
+
+    #content-container {
+        display: flex;
+
+        #login-form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 40%;
+            box-shadow: inset 0 1px 3px #ddd;
+        }
+    
+        #img {
+            height: 100%;
+            width: 60%;
+            background-color: $g1;
+            background-image: url('../../assets/images/bg-img.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+#login-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0; left: 0;
+    height: 4rem;
+    width: 100vw;
+    padding: 0 4rem;
+    background-color: #fff;
+
+    #logo {
+        margin: 0;
+        font-family: Logo;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: $g1;
+
+        span {color: $g2;}
+    }
+
+    #header-btns {
+
+        .btns {
+            height: fit-content;
+            padding: 0.5rem 2rem;
+            border: none;
+            border-radius: 0.25rem;
+            font-family: LogoSemi;
+            color: #fff;
+            background-color: $g1;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $g11;
+            }
+        }
+        
+        #btn2 {
+            margin-left: 1rem;
+            background-color: $g2;
+            &:hover {
+                background-color: $g22;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #login-page-container {
+        padding: 0;
+
+        #content-container {
+            justify-content: center;
+
+            #login-form-container {
+                width: 70%;
+                box-shadow: none;
+            }
+
+            #img {
+                display: none;
+            }
+        }
+    }
+
+    // #login-header-container {
+    //     padding: 0 3rem;
+    //     box-shadow: 0 2px 3px 0 #ddd;
+
+    //     #header-btns {
+    //         display: none;
+    //     }
+    // }
+}
+
+
+@media screen and (max-width: 700px) {
+    #login-page-container {
+        padding: 0;
+
+        #content-container {
+            justify-content: center;
+
+            #login-form-container {
+                width: 100%;
+                box-shadow: none;
+            }
+
+            #img {
+                display: none;
+            }
+        }
+    }
+
+    #login-header-container {
+        padding: 0 3rem;
+        box-shadow: 0 2px 3px 0 #ddd;
+
+        #header-btns {
+            display: none;
+        }
+    }
+}
