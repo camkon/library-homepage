@@ -2,6 +2,7 @@ import react, {useState, useEffect} from 'react';
 import {useNavigate} from 'react-router-dom'
 import './login-form.scss'
 import {Form, Input, Button, Checkbox} from 'antd'
+import toast from 'react-hot-toast';
 
 
 const LoginForm = () => {
@@ -30,11 +31,25 @@ const LoginForm = () => {
             })
         })
         .then((res) => {
+            if(res.status === 200) {
+                toast.success('Login success Please wait...')
+                setSubmitClicked(false)
+                setTimeout(() => {
+                    nav('/home', {replace: true})
+                }, 2000);
+            }else {
+                toast.dismiss();
+                toast.error("Username or Password Error!");
+                setSubmitClicked(false)
+            }
             return res.json()
         })
         .then((data) => {
-            setSubmitClicked(false)
         })
+        setTimeout(() => {
+            setSubmitClicked(false);
+            toast.error('Unable to connect! Try again later');
+        }, 5500);
     }
 
     return(

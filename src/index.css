@@ -1,6 +1,6 @@
 @font-face {
     font-family: ibm;
-    src: url('./assets/ibm-plex/IBMPlexSans-Regular.ttf');
+    src: url('./assets/inter/Inter-Regular.ttf');
 }
 
 * {
@@ -8,10 +8,10 @@
 }
 
 :root {
-    --g1: #000d47;
-    --g11: #00136a;
-    --g2: #b07600;
-    --g22: #cc8800;
+    --g1: #023047;
+    --g11: #003955;
+    --g2: #fb8500;
+    --g22: #ff941a;
 }
 
 body {
