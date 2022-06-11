@@ -27,9 +27,20 @@ $g22: var(--g22);
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100%;
             width: 40%;
             box-shadow: inset 0 1px 3px #ddd;
+
+            #form-head {
+                // width: 100%;
+                background-color: red;
+                text-align: center;
+
+                #form-head-title {
+                    font-size: 2rem;
+                }
+            }
         }
     
         #img {
@@ -109,15 +120,6 @@ $g22: var(--g22);
             }
         }
     }
-
-    // #login-header-container {
-    //     padding: 0 3rem;
-    //     box-shadow: 0 2px 3px 0 #ddd;
-
-    //     #header-btns {
-    //         display: none;
-    //     }
-    // }
 }
 
 

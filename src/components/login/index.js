@@ -14,6 +14,10 @@ const Login = () => {
             <LoginHeader />
             <Content id="content-container">
                 <div id="login-form-container">
+                    <div id="form-head">
+                        <div id="form-head-title">Welcome Back</div>
+                        <div id="form-head-subtitle">Sub-title text goes here</div>
+                    </div>
                     <LoginForm />
                 </div>
                 <div id="img"></div>
