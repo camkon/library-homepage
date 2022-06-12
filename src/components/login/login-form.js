@@ -48,7 +48,6 @@ const LoginForm = () => {
         })
         setTimeout(() => {
             setSubmitClicked(false);
-            toast.error('Unable to connect! Try again later');
         }, 5500);
     }
 
